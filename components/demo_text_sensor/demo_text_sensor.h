@@ -3,7 +3,7 @@
 #include "esphome/core/component.h"
 #include "esphome/core/helpers.h"
 
-namespace esphome {
+namespace mycustom {
 namespace demo {
 
 class DemoTextSensor : public text_sensor::TextSensor, public PollingComponent {
