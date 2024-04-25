@@ -1,9 +1,9 @@
 #include "esphome.h"
 
-class MyCustomExternalComponent : public PollingComponent, public Sensor {
+class MyTestExternalComponent : public PollingComponent, public Sensor {
  public:
   // constructor
-  MyCustomExternalComponent() : PollingComponent(15000) {}
+  MyTestExternalComponent() : PollingComponent(15000) {}
 
   float get_setup_priority() const override { return esphome::setup_priority::HARDWARE; }
 
