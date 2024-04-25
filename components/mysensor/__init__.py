@@ -10,13 +10,13 @@ from esphome.const import (
 
 mynamespace_ns = cg.esphome_ns.namespace("mynamespace_")
 
-TemplateSensor = mynamespace_ns.class_(
-    "TemplateSensor", sensor.Sensor, cg.PollingComponent
+MyNamespaceSensor = mynamespace_ns.class_(
+    "MyNamespaceSensor", sensor.Sensor, cg.PollingComponent
 )
 
 CONFIG_SCHEMA = (
     sensor.sensor_schema(
-        TemplateSensor,
+        MyNamespaceSensor,
         accuracy_decimals=1,
     )
     .extend(
