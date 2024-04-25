@@ -1,5 +1,9 @@
 #include "esphome.h"
 
+
+namespace esphome {
+namespace my_external_component{
+
 class MyTestExternalComponent : public PollingComponent, public Sensor {
  public:
   // constructor
@@ -14,3 +18,6 @@ class MyTestExternalComponent : public PollingComponent, public Sensor {
     publish_state("77.0");
   }
 };
+
+}
+}
