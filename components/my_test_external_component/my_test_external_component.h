@@ -2,7 +2,7 @@
 
 
 namespace esphome {
-namespace my_external_component{
+namespace my_test_external_component{
 
 class MyTestExternalComponent : public PollingComponent, public Sensor {
  public:
