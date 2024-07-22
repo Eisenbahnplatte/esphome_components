@@ -1,10 +1,4 @@
-#pragma once
-
-#include "esphome/core/component.h"
-#include "esphome/core/helpers.h"
-
-namespace mycustom {
-namespace demo {
+#include "esphome.h"
 
 class DemoTextSensor : public text_sensor::TextSensor, public PollingComponent {
  public:
